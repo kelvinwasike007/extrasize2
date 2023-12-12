@@ -73,7 +73,7 @@ const Register = () => {
 			try {
 				setLoading(true);
 				const res = await axios.post(
-					"https://server:1000/users/register",
+					"https://server-0lvo.onrender.com/users/register",
 					newUser
 				);
 				setLoading(false);

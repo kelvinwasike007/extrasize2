@@ -29,7 +29,7 @@ const Login = () => {
 
 		try {
 			setLoading(true);
-			const res = await axios.post("https://server:1000/users/login", {
+			const res = await axios.post("https://server-0lvo.onrender.com/users/login", {
 				email,
 				password,
 			});

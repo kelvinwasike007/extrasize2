@@ -85,7 +85,7 @@ const Record = ({ user, close, date }) => {
 					};
 
 					const response = await axios.post(
-						"https://server:1000/strava/refresh",
+						"https://server-0lvo.onrender.com/strava/refresh",
 						data
 					);
 					console.log("Refresh Response:", response.data);
@@ -122,7 +122,7 @@ const Record = ({ user, close, date }) => {
 			};
 			console.log("Data:", data);
 			const response = await axios.post(
-				"https://server:1000/strava/activity",
+				"https://server-0lvo.onrender.com/strava/activity",
 				data
 			);
 			console.log("Response:", response.data);
