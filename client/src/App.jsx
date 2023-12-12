@@ -48,7 +48,7 @@ const App = () => {
 					};
 
 					const response = await axios.post(
-						"http://localhost:8000/strava/refresh",
+						"server:1000/strava/refresh",
 						data
 					);
 					console.log("Refresh Response:", response.data);

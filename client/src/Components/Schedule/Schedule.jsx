@@ -35,7 +35,7 @@ const Schedule = ({ close }) => {
 
 		const makeAPICall = () => {
 			axios
-				.post("http://localhost:8000/schedule", data, { timeout: 10000 })
+				.post("server:1000/schedule", data, { timeout: 10000 })
 				.then((res) => {
 					console.log(res);
 					close();
