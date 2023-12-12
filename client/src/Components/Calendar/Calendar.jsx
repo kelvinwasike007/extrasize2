@@ -42,7 +42,7 @@ const MyCalendar = ({ user }) => {
 
 	const handleLogin = async () => {
 		try {
-			window.open("server:1000/google", "_self");
+			window.open("https://server:1000/google", "_self");
 		} catch (err) {
 			console.log(err);
 		}
@@ -52,7 +52,7 @@ const MyCalendar = ({ user }) => {
 	useEffect(() => {
 		const fetchEvents = async () => {
 			try {
-				const res = await axios.get("server:1000/events");
+				const res = await axios.get("https://server:1000/events");
 				console.log(res.data);
 				if (res.data) {
 					setEvents(res.data?.data?.items);

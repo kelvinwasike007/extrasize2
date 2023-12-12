@@ -73,7 +73,7 @@ const Register = () => {
 			try {
 				setLoading(true);
 				const res = await axios.post(
-					"server:1000/users/register",
+					"https://server:1000/users/register",
 					newUser
 				);
 				setLoading(false);
