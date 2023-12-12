@@ -56,7 +56,9 @@ const initDB = async () => {
 };
 
 initDB();
-
+app.get('/health', (req, res) => {
+	res.status(200).json({ status: 'OK' });
+  });
 // Routes
 app.use("/users", require("./Routes/UserRoute"));
 app.use("/strava", require("./Routes/StravaRoute"));
