@@ -64,6 +64,7 @@ app.use("/", require("./Routes/CalendarRoute"));
 // app.use("/tokens",require("./Routes/ApiRoute"));
 
 // Start the server
-app.listen(port, "0.0.0.0", () => {
+const host = "0.0.0.0";
+app.listen(port, host, () => {
 	console.log(`Server is running on port: ${host}:${port}`);
 });
