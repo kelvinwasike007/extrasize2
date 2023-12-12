@@ -13,7 +13,7 @@ const oauth2Client = new google.auth.OAuth2(
 	process.env.GOOGLE_CLIENT_ID,
 	process.env.GOOGLE_CLIENT_SECRET,
 	process.env.GOOGLE_REDIRECT_URI,
-	'http://localhost:5173'
+	'https://extrasize.onrender.com'
 );
 
 const calendar = google.calendar({ version: "v3", auth: oauth2Client });
@@ -22,7 +22,7 @@ router.get('/health', (req, res) => {
 	res.status(200).json({ status: 'OK' });
   });
 
-  
+
 router.get("/google", (req, res) => {
 	const authUrl = oauth2Client.generateAuthUrl({
 		access_type: "offline",
